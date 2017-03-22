@@ -35,12 +35,34 @@
     $numeros = array();
 
     for($i=0; $i<5; $i++)
-    {
-        array_push($numeros, rand(1, 10));
+    {        
+        array_push($numeros, rand(1, 10));        
     }
 
     var_dump($numeros);
 
+    $acum = 0;
+    for($i=0; $i<5; $i++)
+    {
+        $acum += $numeros[$i];
+    }
+
+    echo "<br>Acumulador= ".$acum;
+    $acum = $acum/5;
+    echo "<br>Promedio= ".$acum."<br>";
+
+    if($acum > 6)
+    {
+        echo "El promedio es mayor a 6";
+    }
+    else if($acum < 6 )
+    {
+        echo "El promedio menor a 6";
+    }
+    else
+    {
+        echo "El promedio es igual a 6";
+    }
 
 
 
