@@ -20,6 +20,7 @@
     */
 
     //Indices de Array
+    /*
     $numeros = array();
 
     for($i=0; $i<5; $i++)
@@ -28,6 +29,19 @@
     }
 
     var_dump($numeros);
+    */
+
+    //Push
+    $numeros = array();
+
+    for($i=0; $i<5; $i++)
+    {
+        array_push($numeros, rand(1, 10));
+    }
+
+    var_dump($numeros);
+
+
 
 
 ?>
